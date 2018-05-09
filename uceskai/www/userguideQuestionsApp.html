@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="description" content="A user guide for the Questions Phonegap Application"
+</head>
+
+<body>
+<h4>User guide for Questions App</h4>
+The folder quizquestions/uceskai contains all required files to run the questions browser application.
+The main purpose of this app is the creation and input of new questions which are later to be used
+in the corresponding quiz mobile application. 
+<br>
+<h5>
+FEATURES
+</h5>
+A question submission form: enter your desired question, the correct answer and 3 incorrect
+answer options. Please note that special characters such as ',"#.* etc. are not allowed.
+You have the choice to either enter position coordinates yourself ("longitude latitude") 
+or select a location on the map.<br>
+<br>
+An interactive leaflet map: click on your desired location to automatically enter the position 
+coordinates into the form. Zoom in or out of the map by clicking on + and -. To move the
+map content right click anywhere within the map and drag into the desired direction.<br>
+<br>
+When all fields have been filled with content, press "submit". Two alert windows will 
+show up, please confirm both. Also please note that all fields of the form are required to be filled
+in, and exactly 4 answer options are to be provided.<br>
+<br>
+<h5>
+INSTALLATION
+</h5>
+To install and run the application, clone the repository by entering in the terminal window: <br>
+git clone https://github.com/mkainz/quizquestions.git <br>
+<br>
+Find the required server file httpServer.js in the repository github.com/mkainz/server.git and save it to your machine. <br>
+Navigate to the location of the server and start the server by typing: <br>
+node httpServer.js & <br>
+ctrl + c <br>
+<br>
+Then navigate into the folder "uceskai": <br>
+cd uceskai<br>
+<br>
+Start the phonegap app: <br>
+phonegap serve <br>
+<br>
+Open a browser and type in your host followed by your port number, e.g.: <br>
+http://developer.cege.ucl.ac.uk:31299/ <br>
+<br>
+Once you are finished using the application, close the browser tab, navigate to your command
+lind and press <br>
+ctrl + c
+
+
+
+</body>
+</html>
